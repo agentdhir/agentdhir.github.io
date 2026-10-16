@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raghav Dhir — Data & Product Analyst</title>
+<meta name="description" content="Raghav Dhir — final-year B.Tech CSE (JUIT). Data & product analyst: Wipro workforce analytics across 7.2M+ records, churn and profitability analysis, ML on imbalanced data.">
+<meta property="og:title" content="Raghav Dhir — Data & Product Analyst">
+<meta property="og:description" content="Turning messy data into decisions. Wipro workforce analytics (7.2M+ records), churn signal isolation, profit-leak diagnosis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0d12; --panel: #12151d; --panel-2: #171b25; --line: #232838; --text: #e8ebf2; --muted: #9aa3b5;
+    --accent: #7c9cff; --accent-2: #5eead4; --accent-ink: #0b0d12; --chip: #1c2130;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f7f8fb; --panel: #ffffff; --panel-2: #f1f3f8; --line: #e3e7ef; --text: #12151d; --muted: #5b6475;
+            --accent: #3157e0; --accent-2: #0f9f8a; --accent-ink: #ffffff; --chip: #eef1f7; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; }
+  .logo { font-weight: 800; letter-spacing: .5px; color: var(--text); }
+  .logo span { color: var(--accent); }
+  nav .links { display: flex; gap: 18px; font-size: 14px; }
+  nav .links a { color: var(--muted); }
+  header { padding: 84px 0 56px; }
+  .eyebrow { font: 500 13px/1 "JetBrains Mono", monospace; color: var(--accent-2); letter-spacing: .4px; }
+  h1 { font-size: clamp(36px, 6vw, 62px); line-height: 1.05; margin: 14px 0 18px; letter-spacing: -1.5px; }
+  h1 .grad { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lede { font-size: 19px; color: var(--muted); max-width: 680px; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .btn:hover { text-decoration: none; transform: translateY(-1px); }
+  .status { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; font-size: 14px; color: var(--muted); }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.18); }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.6px; color: var(--muted); margin: 0 0 22px; font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .stat b { display: block; font-size: 34px; letter-spacing: -1px; line-height: 1.1; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+  .role { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .role h3 { margin: 0; font-size: 20px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  ul.tight { margin: 14px 0 0; padding-left: 18px; }
+  ul.tight li { margin: 6px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .proj { display: flex; flex-direction: column; gap: 10px; }
+  .proj h3 { margin: 0; font-size: 18px; }
+  .proj p { margin: 0; color: var(--muted); font-size: 15px; }
+  .proj .result { color: var(--text); font-weight: 600; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+  .tag { font: 500 12px/1 "JetBrains Mono", monospace; background: var(--chip); color: var(--muted); padding: 6px 8px; border-radius: 6px; }
+  .proj a.more { font-weight: 600; font-size: 14px; }
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .skills div { background: var(--panel-2); border-radius: 12px; padding: 16px; }
+  .skills b { display: block; margin-bottom: 6px; }
+  .skills span { color: var(--muted); font-size: 14px; }
+  footer { padding: 44px 0 70px; border-top: 1px solid var(--line); }
+  .contact { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  @media (max-width: 640px) { nav .links { display: none; } header { padding: 56px 0 40px; } }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#">raghav<span>.</span>dhir</a>
+  <div class="links"><a href="#impact">Impact</a><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="wrap">
+  <div class="eyebrow">// data analyst · product analyst · decision analyst</div>
+  <h1>I find the <span class="grad">one number</span> that changes the decision.</h1>
+  <p class="lede">Final-year B.Tech CSE at JUIT and former Data Analyst Intern at <b>Wipro</b>, where I turned 7.2M+ raw attendance records into an HR risk framework and a campus footfall forecast. I like messy data, sharp questions, and recommendations people can act on.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://www.linkedin.com/in/raghavdhirr" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn" href="https://github.com/agentdhir" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn" href="mailto:raghavdhirtech@gmail.com">raghavdhirtech@gmail.com</a>
+  </div>
+  <div class="status"><span class="dot"></span>Open to 6-month paid internships · data, product, decision &amp; strategy roles · remote or on-site · can join immediately</div>
+</header>
+
+<section id="impact"><div class="wrap">
+  <h2>Impact, in numbers</h2>
+  <div class="stats">
+    <div class="stat"><b>7.2M+</b><span>raw attendance records consolidated into one traceable pipeline at Wipro</span></div>
+    <div class="stat"><b>889</b><span>employees surfaced for HR review by my Frequency × Intensity risk framework</span></div>
+    <div class="stat"><b>11% → 50%+</b><span>churn jump at the 4th service call — one early-warning rule for retention</span></div>
+    <div class="stat"><b>30%</b><span>discount threshold where a retailer's orders turn loss-making</span></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="card">
+    <div class="role"><div><h3>Data Analyst Intern — Workforce Analytics</h3><div class="meta">Wipro Technologies · Gurugram · on-site</div></div><div class="meta">Jun – Jul 2026</div></div>
+    <ul class="tight">
+      <li>Consolidated <b>7.2M+</b> attendance records from multiple raw CSV sources into a single traceable Python/Pandas pipeline, resolving duplicates that masked true presence patterns.</li>
+      <li>Built a <b>Frequency × Intensity risk framework</b> that narrowed 7M+ records to <b>889 employees</b> with repeated high-intensity off-day presence, cross-validated against normal workday behaviour.</li>
+      <li>Segmented <b>5M+</b> workday records into behaviour categories and campus-intensity tiers, surfacing site-level differences.</li>
+      <li>Prototyped <b>office footfall forecasting</b> and benchmarked explainable baselines with a time-based split, picking a champion model for each of <b>9 locations</b>.</li>
+    </ul>
+    <p style="margin:14px 0 0"><a href="https://github.com/agentdhir/wipro-workforce-analytics" target="_blank" rel="noopener">See the method (sanitized notebooks) ↗</a></p>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <div class="role"><div><h3>Founder — Hustlee</h3><div class="meta">Side project · student upskilling &amp; gigs platform</div></div><div class="meta">Feb 2025 – present</div></div>
+    <p class="meta" style="margin:10px 0 0">Owning product direction, hiring and execution alongside full-time studies.</p>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Selected projects</h2>
+  <div class="grid">
+    <div class="card proj">
+      <h3>Customer Churn Risk Segmentation</h3>
+      <p>Ruled out pricing, data usage and roaming as drivers, then isolated the real one.</p>
+      <p class="result">Churn jumps from ~11% to 50%+ at the 4th service call → a rule that captures ~52% of all churn.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Hypothesis testing</span><span class="tag">Segmentation</span></div>
+      <a class="more" href="https://github.com/agentdhir/customer_churn-" target="_blank" rel="noopener">Code ↗</a>
+    </div>
+    <div class="card proj">
+      <h3>Sales &amp; Profit Optimization</h3>
+      <p>Sales were growing while profit fell. Traced the leak instead of charting it.</p>
+      <p class="result">Discounts above 30% drive the losses; Tables is the biggest loss-making sub-category.</p>
+      <div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Excel</span></div>
+      <a class="more" href="https://github.com/agentdhir/Sales-Performance-Analysis" target="_blank" rel="noopener">Code ↗</a>
+    </div>
+    <div class="card proj">
+      <h3>Intrusion Detection on Imbalanced Data</h3>
+      <p>Showed that 96–99% NSL-KDD accuracies come from random splits; the official test split gives 77–79%.</p>
+      <p class="result">Six models benchmarked; XGBoost best at F1 0.78 / ROC-AUC 0.97 — recall, not precision, is the bottleneck.</p>
+      <div class="tags"><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Evaluation</span></div>
+    </div>
+    <div class="card proj">
+      <h3>SpendSmart — Expense Tracker</h3>
+      <p>Streamlit app with Firebase login, Firestore storage and Plotly breakdowns by category and month.</p>
+      <div class="tags"><span class="tag">Streamlit</span><span class="tag">Firebase</span><span class="tag">Plotly</span></div>
+      <a class="more" href="https://github.com/agentdhir/smart_expense_tracker" target="_blank" rel="noopener">Code ↗</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Toolkit</h2>
+  <div class="skills">
+    <div><b>Querying &amp; code</b><span>SQL (joins, window functions) · Python (Pandas, NumPy) · C++</span></div>
+    <div><b>Analysis</b><span>EDA · hypothesis testing · root-cause analysis · segmentation · forecasting baselines</span></div>
+    <div><b>Machine learning</b><span>Logistic regression · trees · Random Forest · XGBoost · model evaluation</span></div>
+    <div><b>BI &amp; storytelling</b><span>Power BI · Excel · Plotly · Streamlit · insight → recommendation</span></div>
+  </div>
+  <p class="meta" style="margin-top:18px">Certifications: AWS Generative AI · AWS Machine Learning · Kaggle Python · Infosys Python &amp; C++</p>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let's talk</h2>
+  <p class="lede" style="font-size:17px">Hiring for a data, product, decision or strategy internship? I can join immediately and work remote or on-site.</p>
+  <div class="contact">
+    <a class="btn primary" href="mailto:raghavdhirtech@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/raghavdhirr" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn" href="https://github.com/agentdhir" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+  <p class="meta" style="margin-top:28px">B.Tech CSE · Jaypee University of Information Technology · Gurugram, India</p>
+</div></footer>
+</body>
+</html>
